@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Code o Mundo!</title>
+        <link rel="stylesheet" type="text/css" href="Estilo/Style.css"/>
+        <link rel="stylesheet" type="text/css" href="Estilo/Padrao.css"/>
+        <link rel="icon" href="Imagens/logo_code.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div id="menu_lateral" class="menu_lateral">
+            <img id="menu_close" src="Imagens/close_menu.png" width="35px" height="35px" alt="Fechar Menu" onclick="closeMenu()">
+            <p>Code o Mundo!</p>
+            <div class="separador_pag"></div>
+            <div class="links_menu">
+                <a href="Index.html">Página Inicial</a>
+                <a href="Sobre.html">Sobre</a>
+                <a href="ProgramasSociais.html">Programas Sociais</a>
+                <a href="Contato.html">Contato</a>
+            </div>
+            <div class="separador_pag"></div>
+        </div>
+        <header>
+            <div class="logo">
+                <img id="img_logo" src="./Imagens/logo_code.png" alt="">
+                <h1> < CODE > </h1>
+            </div>
+            <img id="open_menu" src="./Imagens/menu.png" alt="Menu lateral" onclick="openMenu()">
+            <div class="menu_grande">
+                <a href="Index.html" id="menu_atual">Página Inicial</a>
+                <a href="Sobre.html">Sobre</a>
+                <a href="ProgramasSociais.html">Programas Sociais</a>
+                <a href="Contato.html">Contato</a>
+            </div>
+        </header>
+        <div class="separador_pag"></div>
+        <div class="home_intro1">
+            <div>
+                <h1>" Vamos reprogramar o Mundo! "</h1>
+                <p>
+                    Gostou de saber de todas essas novidades e infos?        
+                </p>
+                <p>
+                    Neste espaço você pode enviar suas dúvidas e pedir dicas para te ajudar a conhecer este mundo de códigos. 
+                </p>
+            </div>
+            <img src="./Imagens/influencer-animate.svg" alt="">
+        </div>
+        <div class="separador_pag"></div>
+        <main>
+            <div class="intro_intro1">
+                <form method="GET">
+                    <h2>Deixe seus dados e entraremos em contato:</h2>
+                    <input type="text" id="nome" name="nome" maxlength="38" required placeholder="Nome"/>
+                    <input type="email" id="email" name="email" maxlength="38" required placeholder="E-mail"/>
+                    <input type="text" id="fone" name="fone" maxlength="17" required placeholder="Telefone"/>
+                    <input type="submit" class="botao" value="Enviar">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div id="info_profile">
+                <p>Projeto criado para a disciplina de Desenvolvimento Web no curdo de ADS - IFSP no Campus Guarulhos.</p>
+            </div>
+            <div id="info_profile2">
+                <p>Claudia Yapuchura Saire, GU3015459</p>
+                </div>
+        </footer> 
+        <script src="./Scripts/Menu_lateral.js"></script>               
+    </body>
+</html>

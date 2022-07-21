@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" /> 
+        <title>Equipamentos de Informática</title>
+    </head>
+    <body>
+        <header>
+            <h1>Equipamentos de Informática</h1>
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="Index_Pedido.html">Fazer Pedido</a></li>
+            </ul>
+        </header>
+        <main>
+            <img src="../Imagens/Equipamentos.png" alt="Equipamentos de Informática" width="900">
+            <h2>Fazer Pedido</h2>
+            <!-- Formulário: Fazer Pedido -->
+            <form method="GET">
+            <!-- Campo: Nome -->
+            Nome: <input type="text" name="nome" size="40" maxlength="40" placeholder="Nome" autofocus required>
+            <!-- Campo: RG -->
+            RG: <input type="text" name="rg" size="12" maxlength="12" placeholder="RG" required>
+            <!-- Campo: E-mail -->
+            E-mail: <input type="email" name="email" size="30" maxlength="30" placeholder="E-mail" required>
+            <br/><br/>
+            <!-- Lista de Seleção: Equipamento -->
+            Equipamento: <select name="equipamento" required>
+                <option name="select" value="" disabled selected>Escolha...</option>
+                <option name="comp" value="comput">Computador</option>
+                <option name="not" value="note">Notebook</option>
+                <option name="tab" value="tablet">Tablet</option>
+            </select>
+            <!-- Campo: Quantidade -->
+            Quantidade: <input type="number" name="quant" min="1" max="10">
+            <!-- Campo: Garantia Estendida -->
+            <input type="checkbox" name="garantia"/>Garantia estendida?
+            <br/><br/>
+            <!-- Seleção única: Cor -->
+            Cor: <input type="radio" name="cor" value="branco"/>Branco
+                 <input type="radio" name="cor" value="preto"/>Preto
+                 <input type="radio" name="cor" value="prata"/>Prata
+            <br/><br/>
+            <!-- Campo: Endereço -->
+            Endereço: <br/>
+            <textarea name="end" rows="3" cols="70" placeholder="Endereço completo"></textarea>
+            <br/><br/>
+            <!-- Botões: "Enviar Pedido" e "Limpar" -->
+            <input type="submit" name="btn1" value="Enviar pedido">
+            <input type="reset" name="btn2" value="Limpar">
+            </form>
+        </main>
+    </body>
+</html>
